@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="thingdo.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    body {font-family: Verdana, sans-serif;}
+
+      .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-size: 17px;
+        width: 14.285%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 25px;
+        text-align: center;
+    }
+
+    #home {background-color:MidnightBlue;}
+    #About {background-color:MidnightBlue;}
+    #Bookings {background-color:MidnightBlue}
+    #Thingstodo {background-color:MidnightBlue;}
+    #Thingstosee {background-color:MidnightBlue;}
+    #Gallery {background-color:MidnightBlue;}
+    #Contact {background-color:MidnightBlue;}
+
+
+
+
+
+
+    </style>
+    </head>
+
+    <body>
+
+
+
+      <div id="home" class="tabcontent">
+        <h1></h1>
+        <p>YOU HAVE ARRIVED <br> LETS EXPLORE!</p>
+      </div>
+
+      <div id="About" class="tabcontent">
+        <h1></h1>
+        <p>lets know a bit before travelling</p>
+      </div>
+
+      <div id="Bookings" class="tabcontent">
+        <h1></h1>
+        <p>Book your preferable stay</p>
+      </div>
+
+      <div id="Thingstodo" class="tabcontent">
+        <h1></h1>
+        <p><font size="6">check out what exciting to do</font></p>
+      </div>
+
+      <div id="Thingstosee" class="tabcontent">
+        <h1></h1>
+        <p>Explore the treat to your eyes!</p>
+      </div>
+
+      <div id="Gallery" class="tabcontent">
+        <h1><h1>
+        <p>Mind seeing some pictures?</p>
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <h1></h1>
+        <p>We are just one call away!</p>
+      </div>
+
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/tabs.html"><button class="tablink" onclick="openCity('home', this, 'blue')">HOME</button></a>
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/about.html"> <button class="tablink" onclick="openCity('About', this, 'orange')">ABOUT</button></a>
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/bookings.html"><button class="tablink" onclick="openCity('bookings', this, 'violet')">BOOKINGS</button></a>
+    <button class="tablink" onclick="openCity('Thingstodo', this, 'midnightblue')" id="defaultOpen">THINGS TO DO</button>
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/thingsee.html"><button class="tablink" onclick="openCity('Thingstosee', this, 'orange')">THINGS TO SEE</button></a>
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/gallery.html"><button class="tablink" onclick="openCity('Gallery', this, 'orange')">GALLERY</button></a>
+    <a href="file:///C:/Users/A/Desktop/HTML%20project/contact.html"><button class="tablink" onclick="openCity('Contact', this, 'orange')">CONTACT</button></a>
+
+    <script>
+    function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    <br><br><br>
+     <footer>
+    <center>
+    <p><font size="2" color="red">
+      ©  ASHRAE Trademark LTD 2016. All rights reserved.
+             </font>
+    </p>
+      </center>
+    </footer>
+    
+</body>

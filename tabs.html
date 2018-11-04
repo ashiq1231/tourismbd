@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tabs.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+*{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position:relative;
+  margin:auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 17px;
+    width: 14.285%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 25px;
+    text-align: center;
+}
+
+#home {background-color:MidnightBlue;}
+#About {background-color:MidnightBlue;}
+#Bookings {background-color:MidnightBlue}
+#Thingstodo {background-color:MidnightBlue;}
+#Thingstosee {background-color:MidnightBlue;}
+#Gallery {background-color:MidnightBlue;}
+#Contact {background-color:MidnightBlue;}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<div id="home" class="tabcontent">
+  <h1></h1>
+  <p><font size="6">YOU HAVE ARRIVED <br> LETS EXPLORE!</font></p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h1></h1>
+  <p>lets know a bit before travelling</p>
+</div>
+
+<div id="Bookings" class="tabcontent">
+  <h1></h1>
+  <p>Book your preferable stay</p>
+</div>
+
+<div id="Thingstodo" class="tabcontent">
+  <h1></h1>
+  <p>check out what exciting to do</p>
+</div>
+
+<div id="Thingstosee" class="tabcontent">
+  <h1></h1>
+  <p>Explore the treat to your eyes!</p>
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h1><h1>
+  <p>Mind seeing some pictures?</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1></h1>
+  <p>We are just one call away!</p>
+</div>
+
+<button class="tablink" onclick="openCity('home', this, 'midnightblue')" id="defaultOpen">HOME</button>
+<a href="file:///C:/Users/A/Desktop/HTML%20project/about.html"> <button class="tablink" onclick="openCity('About', this, 'orange')">ABOUT</button></a>
+<a href="https://www.booking.com/country/bd.html?aid=318615;label=Low_CPA_English_EN_MY_21457255465-Z4IIb52V_BcxJ4fihQVPkgS84736130665:pl:ta:p1:p2:ac:ap1t1:neg;ws=&gclid=Cj0KCQjwjvXeBRDDARIsAC38TP50PJdCIvRQh1JLzQwYUSEsrqyg9uSxeLXEzPBy7ZOYmRd7hMFSB-8aArJHEALw_wcB"><button class="tablink" onclick="openCity('bookings', this, 'violet')">BOOKINGS</button></a>
+<a href="file:///C:/Users/A/Desktop/HTML%20project/thingdo.html"><button class="tablink" onclick="openCity('Thingstodo', this, 'blue')">THINGS TO DO</button></a>
+<a href="file:///C:/Users/A/Desktop/HTML%20project/thingsee.html"><button class="tablink" onclick="openCity('Thingstosee', this, 'orange')">THINGS TO SEE</button></a>
+<a href="file:///C:/Users/A/Desktop/HTML%20project/gallery.html"><button class="tablink" onclick="openCity('Gallery', this, 'pink')">GALLERY</button></a>
+<a href="file:///C:/Users/A/Desktop/HTML%20project/contact.html"><button class="tablink" onclick="openCity('Contact', this, 'indigo')">CONTACT</button></a>
+
+<br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="tiger.jpg" style="width:100%">
+  <div class="text">ROYAL BENGAL TIGER</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="cox.jpg" style="width:100%">
+  <div class="text">WORLD'S LONGEST SEA BEACH</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="khag.jpg" style="width:100%">
+  <div class="text">KHAGRACHORI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="bandar.jpg" style="width:100%">
+  <div class="text">BANDARBAN</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="w.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"> 4/ 6</div>
+  <img src="tea.jpg" style="width:100%">
+  <div class="text">TEA GARDEN</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="ww.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="sonar.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+<br><br><br>
+ <footer>
+<center>
+<p><font size="2" color="red">
+  ©  ASHRAE Trademark LTD 2016. All rights reserved.
+         </font>
+</p>
+  </center>
+</footer>
+
+
+
+</body>
+
+</html>

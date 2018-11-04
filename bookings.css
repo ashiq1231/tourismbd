@@ -1,0 +1,14 @@
+p.about{
+  word-wrap: break-word;
+  width: 50em;
+  font-family:  'Architects Daughter', cursive;
+}
+* {
+  font-family: 'Pacifico', cursive ;
+
+
+}
+
+div {
+  border-color: blue;
+}
